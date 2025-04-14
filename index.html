@@ -3,17 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=ç, initial-scale=1.0">
-    <!-- Google Fonts -->
-
-    <!-- CSS Files -->
+    <!-- * Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Rouge Script font (blue) -->
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <!-- Cookie font (green) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Neuton font (purple) -->
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- * CSS Files -->
     <link rel="stylesheet" href="./assets/css/reset.css"/>
     <link rel="stylesheet" href="./assets/css/styles.css"/>
+    
+    <!-- * Day.js and plugin (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js"></script>
+    
     <title>Emma & Alex</title>
 </head>
+
 <body>
+    <h1>Emma & Alejandro</h1>
+    <figure>
+        <img id="titleImg" src="./assets/images/title-image.png" alt="picture of Emma & Alejandro">
+    </figure>
+
+    <section id="countdownContainer">
+        <div id="countdownTimer"></div>
+        <div>
+            <p id="days"></p>
+            <p>Días</p>
+        </div>
+        <div>
+            <p id="hours"></p>
+            <p>Horas</p>
+        </div>
+        <div>
+            <p id="minutes"></p>
+            <p>Minutos</p>
+        </div>
+        <div>
+            <p id="seconds"></p>
+            <p>Segundos</p>
+        </div>
+    </section>
+
+    <section>
+        <p>Acompañanos a celebrar este día tan especial!!</p>
+    </section>
+
+    <fieldset>
+        <legend>¿Cuándo?</legend>
+        <p><u>7 de Junio de 2025</u></p>
+        <p>A las 13:00 horas</p>
+    </fieldset>
+
+    <section>
+        <h2>¿Dónde?</h2>
+        <img src="" alt="Image of the venue's Google street view">
+    </section>
+
+    <section>
+        <h2>Código de Vestimenta</h2>
+        <img src="" alt="Image of the Dress Code">
+    </section>
+
+    <section>
+        <h3>Confirmar asistencia</h3>
+        <p>Gracias porcompartir este día tan especial con nosotros 🙏</p>
+        <button>Confirmar</button>
+    </section>
 
 
-    <!-- JavaScript file -->
+    <!-- * JavaScript file -->
  <script src="./assets/js/script.js"></script>
 </body>
 </html>
