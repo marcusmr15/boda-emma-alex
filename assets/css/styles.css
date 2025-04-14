@@ -1,0 +1,69 @@
+/* ! VARIABLES */
+:root {
+    /* Google fonts */
+    --font-blue: "Rouge Script", cursive;
+    --font-green: "Cookie", cursive;
+    --font-purple: "Neuton", serif;;
+    /* Color Palette */
+    --color-bg: #fff9f2 ; 
+    --color-text: olive; 
+}
+
+html {
+    font-size: 100%; /* Default size: 16px */
+}
+
+body {
+    font-size: 1.875rem; /* 1.4 x 16px = 22.4px */
+    font-family: var(--font-green); /* Majority of text will have the gr font applied */
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    padding: 1.25rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+/* ! Blue font elements */
+h1 {
+    font-family: var(--font-blue);
+}
+
+#countdownContainer {
+    border: 2px solid #62572b;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#countdownTimer {
+    font-family: var(--font-purple);
+    color: #62572b;
+}
+
+h1, h2 {
+    padding-bottom: 0.6rem;
+}
+
+#titleImg {
+    /* height: 3.1rem;
+    width: 3.1rem; */
+}
+
+fieldset {
+    border: 2px solid #62572b;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+button {
+    border: 2px solid black;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
