@@ -14,7 +14,7 @@ This project is a simple and elegant single-page website built to serve as an on
 
 ## Installation
 
-No external tools or installation required, simply [CLICK HERE](https://www.example.com/) to view the live webpage! 🌐
+No external tools or installation required, simply [CLICK HERE](https://marcusmr15.github.io/boda-emma-alex/) to view the live webpage! 🌐
 
 ## Features
 
