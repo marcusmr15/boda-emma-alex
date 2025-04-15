@@ -7,6 +7,7 @@
     /* Color Palette */
     --color-bg: #fff9f2 ; 
     --color-text: olive; 
+    --color-frames: #62572b;
 }
 
 html {
@@ -18,9 +19,12 @@ body {
     font-family: var(--font-green); /* Majority of text will have the gr font applied */
     color: var(--color-text);
     background-color: var(--color-bg);
-    padding: 1.25rem;
     line-height: 1.25;
     text-align: center;
+}
+
+main {
+    padding: 1.25rem;
 }
 
 /* ! Blue font elements */
@@ -29,7 +33,7 @@ h1 {
 }
 
 #countdownContainer {
-    border: 2px solid #62572b;
+    border: 2px solid var(--color-frames);
     border-radius: 10px;
     padding: 5px;
     margin: 20px 5px;
@@ -48,22 +52,88 @@ h1, h2 {
     padding-bottom: 0.6rem;
 }
 
+img {
+    border-radius: 5px;
+}
+
 #titleImg {
     /* height: 3.1rem;
     width: 3.1rem; */
 }
 
+/* #where1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    text-align: left;
+    justify-content: space-between;
+} */
+
+.spaceWhereDiv1 {
+    width: 20px;
+}
+
+#where2 {
+
+}
+
+a{
+    text-decoration: underline;
+    transition: ease-in-out 0.3s; 
+}
+
+a:hover{
+    font-size: 110%;
+}
+
+#gateImage {
+    width: 600px;
+}
+
+#mapImage {
+    width: 600px;
+}
+
 fieldset {
-    border: 2px solid #62572b;
+    border: 2px solid var(--color-frames);
     border-radius: 10px;
     padding: 5px;
     margin: 20px 5px;
 }
 
+#dressCodeSection{
+    margin-bottom: 50px;
+}
+
+#dressCodeCont{
+    display: flex;
+    justify-content: center;
+}
+
+#dreesCodeImg {
+    width: 300px;
+}
+
 button {
-    border: 2px solid black;
+    border: 2px solid var(--color-frames);
     background-color: red;
     padding: 5px;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.3s; 
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: green;
+}
+
+footer {
+    background-color: #869197;
+    color: var(--color-bg);
+    font-family: var(--font-purple);
+    font-size: 50%;
+    padding: 30px;
+    margin-top: 30px;
 }
