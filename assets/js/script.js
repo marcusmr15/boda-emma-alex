@@ -1,19 +1,22 @@
 window.addEventListener("DOMContentLoaded", () => {
-  // Autoplay audio once the DOM is ready
-  const audio = document.getElementById("bgAudio");
-  audio.volume = 0.7;
+  
+  
+  // Audio player btn
+  const audioBtn = document.getElementById('audioPlayer');
+  const audio = document.getElementById('backgroundAudio');
 
-  // Track starts on mute, but gets unmuted upon a click-tap
-  const unmuteOnInteraction = () => {
-    if (audio.muted) {
-      audio.muted = false;
+  let isPlaying = false;
+
+  audioBtn.addEventListener('click', () => {
+    if (!isPlaying) {
       audio.play();
-      console.log("🎶 Audio unmuted!");
-      document.removeEventListener("click", unmuteOnInteraction);
+      audioBtn.src = './assets/images/pause-button.png'; // your pause icon
+    } else {
+      audio.pause();
+      audioBtn.src = './assets/images/play-button.png'; // your play icon
     }
-  };
-
-  document.addEventListener("click", unmuteOnInteraction);
+    isPlaying = !isPlaying;
+  });
 
 
   // Countdown
@@ -46,4 +49,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   updateCountdown();
   const interval = setInterval(updateCountdown, 1000);
+
+  // Confirm button
+  const googleForm = document.getElementById('confirmButton');
+
+  googleForm.addEventListener('click', () =>{
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfzYJmZmViJ96GmH7qDDTV1SVX6Kzj8Raam2PXY6N2xAIcLzw/viewform', '_blank')
+  })
+
 });
