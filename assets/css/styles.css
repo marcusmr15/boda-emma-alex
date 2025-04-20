@@ -29,34 +29,29 @@ main {
 
 #playerContainer {
     position: fixed;
-    right: 80px;
-    top: 80px;
+    right: 1.25rem;
+    top: 5rem;
     z-index: 1;
 }
 
 #audioPlayer {
-    border: 2px solid black;
-    width: 75px;
-    border-radius: 37.5px;
+    border: 0.125rem solid black;
+    width: 3rem;
+    border-radius: 1.5rem;
     background-color: rgba(128, 128, 0, 0.500);
     cursor: pointer;
 }
 
-
-
-/* ! Blue font elements */
+/* ! Blue font element */
 h1 {
     font-family: var(--font-blue);
-    opacity: 0; /* Start hidden */
-    transform: translateX(-50px); /* Start off-screen to the left */
-    animation: slide-in 1s ease-out forwards; /* Animation details */
 }
 
 #countdownContainer {
-    border: 2px solid var(--color-frames);
+    border: 0.125rem solid var(--color-frames);
     border-radius: 10px;
-    padding: 5px;
-    margin: 20px 5px;
+    padding: 0.3125rem;
+    margin: 1.25rem 0.3125rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -70,28 +65,24 @@ h1 {
 
 h1, h2 {
     padding-bottom: 0.6rem;
+    opacity: 0; /* Start hidden */
+    transform: translateX(-3.125rem); /* Start off-screen to the left */
+    animation: slide-in 1s ease-out forwards; /* Animation details */
 }
 
 img {
-    border-radius: 5px;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in forwards;
-    z-index: 1;
+    border-radius: 0.3125rem;
 }
 
 #whenCont {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 #where1 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 0.625rem;
     align-items: center;
-}
-
-#gateImage {
-    width: 600px;
 }
 
 #where2 {
@@ -102,8 +93,8 @@ img {
 
 }
 
-#mapImage {
-    width: 600px;
+#gateImage, #mapImage {
+    width: 37.5rem;
 }
 
 a {
@@ -117,14 +108,14 @@ a:hover {
 }
 
 fieldset {
-    border: 2px solid var(--color-frames);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 5px;
+    border: 0.125rem solid var(--color-frames);
+    border-radius: 0.625rem;
+    padding: 0.3125rem;
+    margin: 1.25rem 0.3125rem;
 }
 
 #dressCodeSection{
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 #dressCodeCont{
@@ -133,14 +124,14 @@ fieldset {
 }
 
 #dreesCodeImg {
-    width: 300px;
+    width: 18.75rem;
 }
 
 button {
-    border: 2px solid var(--color-frames);
+    border: 0.125rem solid var(--color-frames);
     background-color: red;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
     color: white;
     cursor: pointer;
     transition: ease-in-out 0.3s; 
@@ -156,8 +147,8 @@ footer {
     color: var(--color-bg);
     font-family: var(--font-purple);
     font-size: 50%;
-    padding: 30px;
-    margin-top: 30px;
+    padding: 1.875rem;
+    margin-top: 1.875rem;
 }
 
 
@@ -167,12 +158,5 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-
 }
   
