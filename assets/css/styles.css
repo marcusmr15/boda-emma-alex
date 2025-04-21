@@ -94,7 +94,7 @@ img {
 
 }
 
-#gateImage, #mapImage {
+#gateImage, #mapImage  {
     width: 37.5rem;
 }
 
@@ -115,7 +115,11 @@ fieldset {
     margin: 1.25rem 0.3125rem;
 }
 
-#dressCodeSection{
+.spaceDressCode {
+    margin-bottom: 2rem;
+}
+
+#dressCodeSection {
     margin-bottom: 3.125rem;
 }
 
@@ -124,9 +128,14 @@ fieldset {
     justify-content: center;
 }
 
-#dreesCodeImg {
-    width: 18.75rem;
+.dreesCodeImg {
+    width: 60rem;
 }
+
+.spaceConfrim {
+    margin-bottom: 1.2rem;
+}
+
 
 button {
     border: 0.125rem solid var(--color-frames);
