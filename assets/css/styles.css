@@ -37,7 +37,8 @@ main {
 #audioPlayer {
     border: 0.125rem solid black;
     width: 3rem;
-    border-radius: 1.5rem;
+    height: 3rem;
+    border-radius: 50%;
     background-color: rgba(128, 128, 0, 0.500);
     cursor: pointer;
 }
