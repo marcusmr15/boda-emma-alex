@@ -19,12 +19,12 @@
 
     <!-- * Favicon --> 
     <!-- Relative path for local testing -->
-    <link rel="icon" href="./assets/images/favicons/favicon.png" type="image/png">
+    <link rel="icon" href="./assets/images/favicons/favicon.png?v=2" type="image/png">
     <!-- Absolute paths for deployed website -->
-    <link rel="icon" href="/assets/images/favicons/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="/assets/images/favicons/favicon.png">
-    <link rel="shortcut icon" href="/assets/images/favicons/favicon.png" type="image/png">
-    <link rel="icon" href="/assets/images/favicons/favicon.ico">
+    <link rel="icon" href="/assets/images/favicons/favicon.png?v=2" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/favicons/favicon.png?v=2">
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.png?v=2" type="image/png">
+    <link rel="icon" href="/assets/images/favicons/favicon.ico?v=2">
 
     
     <!-- * Day.js and plugin (CDN) -->
@@ -38,7 +38,7 @@
       <main>
         <!-- Audio btn -->
         <figure id="playerContainer">
-            <img id="audioPlayer" src="./assets/images/play-button.png" alt="A 'play' icon that starts a song when clicked.">
+            <img id="audioPlayer" src="./assets/images/playerIcons/play-button.png" alt="A 'play' icon that starts a song when clicked.">
         </figure>
 
         <audio id="backgroundAudio" loop>
@@ -86,26 +86,30 @@
         <section>
             <h2>¿Dónde?</h2>
             <figure id="where1">
-                <img id="gateImage" src="./assets/images/venue-frontGate.png" alt="The venue's front gate at street-view.">
+                <img id="gateImage" src="./assets/images/location/venue-frontGate.png" alt="The venue's front gate at street-view.">
                 <div>
                     <p>"<b>Eventos Mirage</b> COAPA, S.A. De C.V."</p>
                     <p>Dirección: </p>
-                    <a href="https://maps.app.goo.gl/Jz2dN2JzB1jfT7LS7">Av. Cafetales 102, Coapa, Granjas Coapa, Tlalpan, 14325 Ciudad de México, CDMX.</a>
+                    <a href="https://maps.app.goo.gl/Jz2dN2JzB1jfT7LS7" target="_blank">Av. Cafetales 102, Coapa, Granjas Coapa, Tlalpan, 14325 Ciudad de México, CDMX.</a>
                 </div>
             </figure>
             <figure id="where2">
-                <img id="mapImage" src="./assets/images/map-overview.png" alt="The venue's Google street view.">
+                <img id="mapImage" src="./assets/images/location/map-overview.png" alt="The venue's Google street view.">
             </figure>
         </section>
 
         <section id="dressCodeSection">
             <h2>Código de Vestimenta</h2>
-            <figure id="dressCodeCont">
-                <img id="dreesCodeImg" src="./assets/images/dress-code.png" alt="Dress code reference  for men and women.">
-            </figure>
-            <h4>Casual Manta</h4>
+            <h3>~ Casual Manta ~</h3>
             <p>Damas: Vestido largo, tela ligera, crudo/beige.</p>
+            <figure id="dressCodeCont">
+                <img class="dreesCodeImg" src="./assets/images/dressCode/dressCode-damas.png" alt="Cuatro mujeres portando el código de vestimenta de damas.">
+            </figure>
+            <div class="spaceDressCode"></div>
             <p>Caballeros: Guayabera clara/beige.</p>
+            <figure id="dressCodeCont">
+                <img class="dreesCodeImg" src="./assets/images/dressCode/dressCode-caballeros.png" alt="Cuatro hombres portando el código de vestimenta de caballeros.">
+            </figure>
         </section>
 
         <p><strong>Sugerencia</strong>: Se alienta a los invitados a llevar una flor natural de su preferencia.</p>
@@ -117,7 +121,9 @@
         <section>
             <h3>Confirmar asistencia</h3>
             <p>Da click en el botón rojo para asegurar tu lugar y el de tus acompañantes.</p>
+            <div class="spaceConfrim"></div>
             <p>¡Gracias por compartir este día tan especial con nosotros! 🙏</p>
+            <div class="spaceConfrim"></div>
             <button id="confirmButton">Confirmar</button>
         </section>
       </main>

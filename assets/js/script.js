@@ -10,10 +10,10 @@ window.addEventListener("DOMContentLoaded", () => {
   audioBtn.addEventListener('click', () => {
     if (!isPlaying) {
       audio.play();
-      audioBtn.src = './assets/images/pause-button.png'; // your pause icon
+      audioBtn.src = './assets/images/playerIcons/pause-button.png'; // pause icon
     } else {
       audio.pause();
-      audioBtn.src = './assets/images/play-button.png'; // your play icon
+      audioBtn.src = './assets/images/playerIcons/play-button.png'; // play icon
     }
     isPlaying = !isPlaying;
   });
