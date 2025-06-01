@@ -54,7 +54,8 @@ window.addEventListener("DOMContentLoaded", () => {
   const googleForm = document.getElementById('confirmButton');
 
   googleForm.addEventListener('click', () =>{
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfzYJmZmViJ96GmH7qDDTV1SVX6Kzj8Raam2PXY6N2xAIcLzw/viewform', '_blank')
+    // window.open('https://docs.google.com/forms/d/e/1FAIpQLSfzYJmZmViJ96GmH7qDDTV1SVX6Kzj8Raam2PXY6N2xAIcLzw/viewform', '_blank')
+    alert("Lo sentimos, la encuesta de confirmación se ha cerrado.");
   })
 
 });
